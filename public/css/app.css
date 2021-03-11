@@ -19,3 +19,12 @@
 #root header li:nth-child(2) {
   background-color: lightblue;
 }
+#root main {
+  background-image: url("/img/fondo-pag-speciali.jpg");
+  display: flex;
+  flex-wrap: wrap;
+}
+#root main img {
+  height: 300px;
+  width: 500px;
+}

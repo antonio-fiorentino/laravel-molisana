@@ -23,4 +23,14 @@
       background-color: lightblue;
     }
   }
+  main{
+    background-image: url('/img/fondo-pag-speciali.jpg');
+    display: flex;
+    flex-wrap: wrap;
+
+    img{
+      height: 300px;
+      width: 500px;
+    }
+  }
 }

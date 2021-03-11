@@ -125,3 +125,27 @@ $data = '[
 $array = json_decode($data, true);
 
 @endphp
+
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+  </head>
+  <body>
+
+    {{$idProduct}}
+    <br>
+    {{ $array[$idProduct]['titolo']}}
+    <br>
+    {{ $array[$idProduct]['tipo']}}
+    <br>
+    {{ $array[$idProduct]['cottura']}}
+    <br>
+    {{ $array[$idProduct]['peso']}}
+    <br>
+    {{ $array[$idProduct]['descrizione']}}
+
+  </body>
+</html>

@@ -1,1 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+#root header {
+  text-align: center;
+}
+#root header .logo {
+  margin-bottom: 10px;
+}
+#root header li {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+}
+#root header li:nth-child(2) {
+  background-color: lightblue;
+}

@@ -19,7 +19,7 @@
     <br>
     {{ $pastaArray[$idProduct]['peso']}}
     <br>
-    {{{ $pastaArray[$idProduct]['descrizione'] }}}
+    {!! $pastaArray[$idProduct]['descrizione'] !!}
 
   </body>
 </html>

@@ -20,17 +20,36 @@
       line-height: 40px;
     }
     li:nth-child(2){
-      background-color: lightblue;
+      background-color: #b6dbe4;
     }
   }
   main{
     background-image: url('/img/fondo-pag-speciali.jpg');
-    display: flex;
-    flex-wrap: wrap;
 
-    img{
-      height: 300px;
-      width: 500px;
+
+    .container{
+      width: 1560px;
+      margin: auto;
+      padding: 25px 0px;
+
+
+      h2{
+        margin-left: 10px;
+        color: #002d73;
+        text-transform: uppercase;
+      }
+      .pasta{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:  flex-start;
+      }
+      img{
+        height: 300px;
+        width: 500px;
+        margin: 0px 10px;
+      }
     }
   }
 }

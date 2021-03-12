@@ -1,4 +1,4 @@
-{{-- @php
+<?php
 $data = '[
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -122,80 +122,4 @@ $data = '[
   }
   ]';
 
-$array = json_decode($data, true);
-
-@endphp --}}
-
-<!DOCTYPE html>
-<html lang="it" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>La Molisana</title>
-  </head>
-  <body>
-
-    <div id="root">
-
-      <header>
-
-        <div class="logo">
-          <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-        </div>
-
-        <div class="lista">
-          <ul>
-            <li>Home</li>
-            <li>Prodotti</li>
-            <li>News</li>
-          </ul>
-        </div>
-
-      </header>
-
-      <main>
-
-        <div class="container">
-
-          <h2>Le lunghe</h2>
-
-          <div class="pasta">
-            @foreach ($pastaArray as $key => $item)
-              @if ($item['tipo'] === 'lunga')
-                <a href="/product/{{ $key }}"><img src="{{ $item['src'] }}" alt=""></a>
-              @endif
-            @endforeach
-          </div>
-
-
-          <h2>Le corte</h2>
-
-          <div class="pasta">
-            @foreach ($pastaArray as $key => $item)
-              @if ($item['tipo'] === 'corta')
-                <a href="/product/{{ $key }}"><img src="{{ $item['src'] }}" alt=""></a>
-              @endif
-            @endforeach
-          </div>
-
-
-          <h2>Le cortissime</h2>
-
-          <div class="pasta">
-            @foreach ($pastaArray as $key => $item)
-              @if ($item['tipo'] === 'cortissima')
-                <a href="/product/{{ $key }}"><img src="{{ $item['src'] }}" alt=""></a>
-              @endif
-            @endforeach
-          </div>
-
-        </div>
-
-      </main>
-
-
-
-    </div>
-
-  </body>
-</html>
+return json_decode($data, true);

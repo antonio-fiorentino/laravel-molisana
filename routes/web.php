@@ -14,15 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $pasta = config('pasta');
+    return view('pages.home', [
+        'pastaArray' => $pasta
+    ]);
 });
 
-Route::get('/home', function () {
-    return view('pages.home');
-});
+// Route::get('/home', function () {
+//     return view('pages.home');
+// });
 
 Route::get('/product/{id}', function ($id) {
+    $pasta = config('pasta');
     return view('pages.product',
-        ['idProduct' => $id]
+        ['idProduct' => $id],
+        ['pastaArray' => $pasta]
   );
 });

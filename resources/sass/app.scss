@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 #root{
@@ -25,6 +26,7 @@
   }
   main{
     background-image: url('/img/fondo-pag-speciali.jpg');
+    background-position: 80% 20%;
 
 
     .container{
@@ -90,5 +92,106 @@
       }
     }
   }
+
+}
+
+
+
+// Pagina PRODOTTI
+
+
+
+#product{
+
+
+
+  header{
+    text-align: center;
+
+    .logo{
+      margin-bottom: 10px;
+    }
+
+    li{
+      display: inline-block;
+      width: 60px;
+      height: 40px;
+      line-height: 40px;
+    }
+    li:nth-child(2){
+      background-color: #b6dbe4;
+    }
+  }
+
+  main{
+    width: 100%;
+    background-color: #b8dae6;
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title{
+      font-size: 20px;
+      color: #002d73;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .pasta img{
+      width: 960px;
+      height: 375px;
+    }
+    .pacco img{
+      width: 960px;
+      height: 470px;
+    }
+    .descrizione{
+      width: 85%;
+      margin: auto;
+      font-size: 20px;
+      color: #002d73;
+    }
+  }
+
+
+  footer{
+    background-color: #fff;
+
+
+    #mountain{
+      width: 100%;
+    }
+
+    .container{
+      width: 1560px;
+      margin: auto;
+      padding: 25px 0px;
+      display: flex;
+      justify-content: flex-start;
+      color: grey;
+
+      ul{
+        display: block;
+        list-style: none;
+      }
+      ul:first-of-type{
+        font-size: 12px;
+
+        img{
+          margin-bottom: 20px;
+        }
+      }
+      ul:nth-child(2) li{
+        margin: 10px 688px 10px 200px;
+      }
+      ul:last-of-type li{
+        margin: 10px 0px;
+      }
+      h3:last-of-type{
+        margin-top: 20px;
+      }
+    }
+  }
+
 
 }

@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #root header {
@@ -21,6 +22,7 @@
 }
 #root main {
   background-image: url("/img/fondo-pag-speciali.jpg");
+  background-position: 80% 20%;
 }
 #root main .container {
   width: 1560px;
@@ -75,5 +77,82 @@
   margin: 10px 0px;
 }
 #root footer .container h3:last-of-type {
+  margin-top: 20px;
+}
+
+#product header {
+  text-align: center;
+}
+#product header .logo {
+  margin-bottom: 10px;
+}
+#product header li {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+}
+#product header li:nth-child(2) {
+  background-color: #b6dbe4;
+}
+#product main {
+  width: 100%;
+  background-color: #b8dae6;
+  padding: 25px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#product main .title {
+  font-size: 20px;
+  color: #002d73;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#product main .pasta img {
+  width: 960px;
+  height: 375px;
+}
+#product main .pacco img {
+  width: 960px;
+  height: 470px;
+}
+#product main .descrizione {
+  width: 85%;
+  margin: auto;
+  font-size: 20px;
+  color: #002d73;
+}
+#product footer {
+  background-color: #fff;
+}
+#product footer #mountain {
+  width: 100%;
+}
+#product footer .container {
+  width: 1560px;
+  margin: auto;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: flex-start;
+  color: grey;
+}
+#product footer .container ul {
+  display: block;
+  list-style: none;
+}
+#product footer .container ul:first-of-type {
+  font-size: 12px;
+}
+#product footer .container ul:first-of-type img {
+  margin-bottom: 20px;
+}
+#product footer .container ul:nth-child(2) li {
+  margin: 10px 688px 10px 200px;
+}
+#product footer .container ul:last-of-type li {
+  margin: 10px 0px;
+}
+#product footer .container h3:last-of-type {
   margin-top: 20px;
 }
